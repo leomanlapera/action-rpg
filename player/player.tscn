@@ -492,3 +492,7 @@ polygon = PackedVector2Array(0, 13, -5, 6, 0, 0, 5, 6)
 show_behind_parent = true
 position = Vector2(0, 3)
 texture = ExtResource("3_g1dw6")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
