@@ -76,6 +76,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [32, 33, 34, 35]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [PackedVector2Array(-2, -18, -2, -24, -1, -25, 0, -25, 1, -24, 1, -18), PackedVector2Array(-26, -1, -26, -7, -21, -16, -15, -19, -7, -21, -3, -21, -2, -20, -2, -19, -6, -17, -10, -12, -11, -6, -11, -1), PackedVector2Array(-8, 12, -11, 12, -22, 6, -25, 2, -26, -7, -22, -14, -15, -19, -6, -20, -6, -19, -14, -14, -15, -8, -11, -3, -4, -1, -4, 5), PackedVector2Array(3, 2, 0, 2, 0, 5, -6, 9, -12, 9, -11, 11, -8, 12, -3, 13, 2, 13, 3, 12), PackedVector2Array()]
+}
 
 [sub_resource type="Animation" id="Animation_2ieo8"]
 resource_name = "attack_right"
@@ -93,6 +105,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [24, 25, 26, 27]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [PackedVector2Array(2, -18, -1, -18, -1, -24, 0, -25, 1, -25, 2, -24), PackedVector2Array(12, -1, 12, -10, 7, -16, 2, -19, 2, -20, 7, -21, 12, -20, 21, -16, 25, -10, 26, -7, 26, -1), PackedVector2Array(2, -1, 8, 12, 16, 10, 23, 5, 26, -7, 22, -14, 12, -20, 6, -20, 6, -19, 9, -18, 15, -12, 14, -5, 8, -2), PackedVector2Array(-3, 1, -3, 12, -2, 13, 3, 13, 8, 12, 12, 10, 12, 9, 6, 10, 3, 7, 1, 5, -1, 1), PackedVector2Array()]
+}
 
 [sub_resource type="Animation" id="Animation_ebec5"]
 resource_name = "attack_up"
@@ -109,6 +133,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [28, 29, 30, 31]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [PackedVector2Array(-9, -6, -20, -6, -21, -7, -21, -8, -20, -9, -9, -9), PackedVector2Array(1, -17, 1, -26, 0, -27, -8, -26, -15, -21, -19, -14, -20, -11, -20, -5, -19, -5, -18, -6, -16, -10, -14, -12, -10, -14), PackedVector2Array(9, -9, 19, -14, 19, -16, 13, -23, 3, -27, -8, -26, -14, -22, -18, -16, -18, -14, -16, -15, -11, -19, -2, -20, 2, -17), PackedVector2Array(10, -7, 13, -7, 16, -12, 16, -18, 15, -20, 16, -20, 18, -18, 20, -14, 21, -12, 21, -5, 20, -4, 10, -4), PackedVector2Array()]
 }
 
 [sub_resource type="Animation" id="Animation_e7oew"]
@@ -479,7 +515,6 @@ graph_offset = Vector2(38, -97)
 [sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_g1dw6"]
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_rkbax"]
-graph_offset = Vector2(-296, 36)
 nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_g1dw6")
 nodes/StateMachine/position = Vector2(-60, 140)
 nodes/TimeScale/node = SubResource("AnimationNodeTimeScale_g1dw6")
