@@ -515,6 +515,7 @@ graph_offset = Vector2(38, -97)
 [sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_g1dw6"]
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_rkbax"]
+graph_offset = Vector2(-277, 65)
 nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_g1dw6")
 nodes/StateMachine/position = Vector2(-60, 140)
 nodes/TimeScale/node = SubResource("AnimationNodeTimeScale_g1dw6")
@@ -522,7 +523,8 @@ nodes/TimeScale/position = Vector2(200, 140)
 nodes/output/position = Vector2(380, 180)
 node_connections = [&"TimeScale", 0, &"StateMachine", &"output", 0, &"TimeScale"]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+motion_mode = 1
 script = ExtResource("1_rkbax")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
