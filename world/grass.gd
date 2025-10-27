@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var GRASS_EFFECT: PackedScene
+var GRASS_EFFECT = preload("uid://ce5p53poxd7b4")
 
 @onready var hurtbox: Hurtbox = $Hurtbox
 

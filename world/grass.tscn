@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://g5kxs1gayglc"]
+[gd_scene load_steps=5 format=3 uid="uid://g5kxs1gayglc"]
 
 [ext_resource type="Script" uid="uid://w2vg814vo2gt" path="res://world/grass.gd" id="1_6gvtj"]
 [ext_resource type="Texture2D" uid="uid://dy0j6ob8dc3yp" path="res://world/grass.png" id="1_44d1o"]
-[ext_resource type="PackedScene" uid="uid://ce5p53poxd7b4" path="res://effects/grass_effect.tscn" id="2_aervy"]
 [ext_resource type="Script" uid="uid://c7ovbafqilsca" path="res://damage_boxes/hurtbox.gd" id="4_3sb01"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_44d1o"]
@@ -10,7 +9,6 @@ size = Vector2(14, 14)
 
 [node name="Grass" type="Node2D"]
 script = ExtResource("1_6gvtj")
-GRASS_EFFECT = ExtResource("2_aervy")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_44d1o")

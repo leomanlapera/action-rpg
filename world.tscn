@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://bu1bf4jybhf8f"]
+[gd_scene load_steps=10 format=4 uid="uid://bu1bf4jybhf8f"]
 
 [ext_resource type="PackedScene" uid="uid://c7a1r4t2fmfan" path="res://player/player.tscn" id="1_f3sb7"]
 [ext_resource type="Texture2D" uid="uid://da0w1qisn68p2" path="res://world/grass_background.png" id="1_fj7yv"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dd1g2qenocici" path="res://world/tree.tscn" id="4_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://g5kxs1gayglc" path="res://world/grass.tscn" id="7_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://dxr2bi25fm20" path="res://enemies/bat_enemy.tscn" id="8_gbfbk"]
+[ext_resource type="PackedScene" uid="uid://bteoi58yi0p40" path="res://ui/hearts_ui.tscn" id="9_ioo17"]
 
 [node name="World" type="Node2D"]
 y_sort_enabled = true
@@ -118,3 +119,11 @@ position = Vector2(17, 164)
 
 [node name="BatEnemy2" parent="." instance=ExtResource("8_gbfbk")]
 position = Vector2(273, 150)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HeartsUI" parent="UI" instance=ExtResource("9_ioo17")]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 22.0
+offset_bottom = 19.0
