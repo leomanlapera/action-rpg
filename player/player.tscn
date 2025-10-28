@@ -1,11 +1,14 @@
-[gd_scene load_steps=61 format=3 uid="uid://c7a1r4t2fmfan"]
+[gd_scene load_steps=64 format=3 uid="uid://c7a1r4t2fmfan"]
 
 [ext_resource type="Texture2D" uid="uid://b8616xhowuwgc" path="res://player/player.png" id="1_oul6g"]
 [ext_resource type="Script" uid="uid://c08x3wuot26ik" path="res://player/player.gd" id="1_rkbax"]
 [ext_resource type="Resource" uid="uid://dpm3w8xgiqeaa" path="res://player/player_stats.tres" id="2_g6k8r"]
 [ext_resource type="Texture2D" uid="uid://dyhcibe7saokg" path="res://shadows/medium_shadow.png" id="3_g1dw6"]
+[ext_resource type="AudioStream" uid="uid://co8c8n3dk8y7f" path="res://music_and_sounds/swipe.wav" id="4_boad6"]
 [ext_resource type="Script" uid="uid://dks51kk420wh6" path="res://damage_boxes/hitbox.gd" id="4_yw30f"]
+[ext_resource type="AudioStream" uid="uid://dbwen5cayn14e" path="res://music_and_sounds/evade.wav" id="5_rgyib"]
 [ext_resource type="Script" uid="uid://c7ovbafqilsca" path="res://damage_boxes/hurtbox.gd" id="6_g6k8r"]
+[ext_resource type="AudioStream" uid="uid://c643dhbiyqse5" path="res://music_and_sounds/hurt.wav" id="9_hg6s5"]
 
 [sub_resource type="Animation" id="Animation_g1dw6"]
 length = 0.001
@@ -112,6 +115,21 @@ tracks/3/keys = {
 "method": &"clear_hit_targets"
 }]
 }
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("4_boad6")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/4/use_blend = true
 
 [sub_resource type="Animation" id="Animation_yllr7"]
 resource_name = "attack_left"
@@ -167,6 +185,21 @@ tracks/3/keys = {
 "method": &"clear_hit_targets"
 }]
 }
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("4_boad6")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/4/use_blend = true
 
 [sub_resource type="Animation" id="Animation_2ieo8"]
 resource_name = "attack_right"
@@ -222,6 +255,21 @@ tracks/3/keys = {
 "method": &"clear_hit_targets"
 }]
 }
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("4_boad6")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/4/use_blend = true
 
 [sub_resource type="Animation" id="Animation_ebec5"]
 resource_name = "attack_up"
@@ -277,6 +325,21 @@ tracks/3/keys = {
 "method": &"clear_hit_targets"
 }]
 }
+tracks/4/type = "audio"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AudioStreamPlayer")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("4_boad6")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/4/use_blend = true
 
 [sub_resource type="Animation" id="Animation_e7oew"]
 resource_name = "roll_down"
@@ -306,6 +369,21 @@ tracks/1/keys = {
 "update": 1,
 "values": [true, false]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("5_rgyib")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_tqiix"]
 resource_name = "roll_left"
@@ -335,6 +413,21 @@ tracks/1/keys = {
 "update": 1,
 "values": [true, false]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("5_rgyib")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_wodsf"]
 resource_name = "roll_right"
@@ -364,6 +457,21 @@ tracks/1/keys = {
 "update": 1,
 "values": [true, false]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("5_rgyib")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_32hag"]
 resource_name = "roll_up"
@@ -393,6 +501,21 @@ tracks/1/keys = {
 "update": 1,
 "values": [true, false]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("5_rgyib")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_8t03j"]
 resource_name = "run_down"
@@ -830,3 +953,10 @@ shape = SubResource("RectangleShape2D_boad6")
 libraries = {
 &"": SubResource("AnimationLibrary_x7c3f")
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Sounds"
+
+[node name="HurtAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_hg6s5")
+bus = &"Sounds"
